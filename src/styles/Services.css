@@ -1,0 +1,90 @@
+/* Services.css */
+
+/* --- Main Section --- */
+.services-section {
+  /* bg-gray-800 */
+  background-color: #1f2937;
+  /* text-white */
+  color: #ffffff;
+  /* scroll-mt-24 (offsets scroll position for sticky nav) */
+  scroll-margin-top: 6rem;
+}
+
+/* --- Container --- */
+.services-container {
+  /* max-w-6xl */
+  max-width: 72rem;
+  margin: 0 auto; /* mx-auto */
+  /* py-24 */
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  /* px-6 */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Tablet/Desktop Padding adjustments (md:px-12) */
+@media (min-width: 768px) {
+  .services-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* --- Header Area --- */
+.services-header {
+  /* text-center by default */
+  text-align: center;
+}
+
+/* md:text-left */
+@media (min-width: 768px) {
+  .services-header {
+    text-align: left;
+  }
+}
+
+.services-label {
+  /* text-3xl */
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  /* uppercase */
+  text-transform: uppercase;
+  /* tracking-wide */
+  letter-spacing: 0.025em;
+  /* text-cyan-500 */
+  color: #06b6d4;
+  margin: 0;
+}
+
+/* --- Grid Layout --- */
+.services-grid {
+  /* mt-10 */
+  margin-top: 2.5rem;
+  display: grid;
+  /* Default: 1 column */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  /* gap-6 */
+  gap: 1.5rem;
+}
+
+/* sm:grid-cols-2 */
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* md:gap-8 (increase gap on medium screens) */
+@media (min-width: 768px) {
+  .services-grid {
+    gap: 2rem;
+  }
+}
+
+/* lg:grid-cols-3 */
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

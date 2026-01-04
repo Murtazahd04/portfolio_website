@@ -1,0 +1,138 @@
+/* About.css */
+
+/* --- Main Section Layout --- */
+.about-section {
+  /* min-h-screen */
+  min-height: 100vh;
+  /* flex items-center justify-center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* bg-gray-800 */
+  background-color: #1f2937;
+  /* text-white */
+  color: #ffffff;
+  /* px-6 py-24 */
+  padding: 6rem 1.5rem;
+  /* For smooth scrolling offset */
+  scroll-margin-top: 6rem;
+}
+
+/* --- Container (Grid Layout) --- */
+.about-container {
+  width: 100%;
+  /* max-w-6xl */
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  /* grid-cols-1 (mobile default) */
+  grid-template-columns: 1fr;
+  gap: 2.5rem; /* gap-10 */
+  align-items: center;
+}
+
+/* --- Text Content Area --- */
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+  /* Mobile: Center text, Order 2 */
+  text-align: center;
+  order: 2;
+}
+
+/* --- Image Content Area --- */
+.about-image-content {
+  display: flex;
+  /* Mobile: Center image, Order 1 */
+  justify-content: center;
+  order: 1;
+}
+
+/* --- Typography --- */
+.about-label {
+  font-size: 1.875rem; /* text-3xl */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wide */
+  color: #06b6d4; /* text-cyan-500 */
+  margin: 0;
+}
+
+.about-heading {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.about-bio {
+  font-size: 1.125rem; /* text-lg */
+  color: #e5e7eb; /* text-gray-200 */
+  line-height: 1.625;
+  margin: 0;
+}
+
+/* --- Gradient Text Effect --- */
+.gradient-text {
+  font-weight: 700;
+  background: linear-gradient(to right, #22d3ee, #2563eb); /* cyan-400 to blue-600 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block; /* Often helps with background-clip in some browsers */
+}
+
+/* --- Image Styling --- */
+.image-wrapper {
+  position: relative;
+  width: 16rem;  /* w-64 */
+  height: 16rem; /* h-64 */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #374151; /* border-gray-700 */
+  /* shadow-2xl approximation */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Responsive Media Queries (Desktop) --- */
+@media (min-width: 768px) {
+  .about-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .about-container {
+    /* grid-cols-2 */
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-text-content {
+    /* Desktop: Left align, Order 1 */
+    text-align: left;
+    order: 1;
+  }
+
+  .about-image-content {
+    /* Desktop: End align, Order 2 */
+    justify-content: flex-end;
+    order: 2;
+  }
+
+  .about-heading {
+    font-size: 3rem; /* md:text-5xl */
+  }
+
+  .about-bio {
+    font-size: 1.25rem; /* md:text-xl */
+  }
+
+  .image-wrapper {
+    width: 24rem;  /* md:w-96 */
+    height: 24rem; /* md:h-96 */
+  }
+}

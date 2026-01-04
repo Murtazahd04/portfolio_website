@@ -1,15 +1,19 @@
 import React from 'react';
+import '../styles/Skill_Card.css'; // Import the CSS file
 
 const Skill_Card = ({ icon, name, color }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-gray-500 hover:-translate-y-1 transition-all duration-300 ease-in-out">
+    <div className="skill-card">
       {/* Icon Section */}
-      <div className="text-5xl mb-3" style={{ color: color }}>
+      <div 
+        className="skill-icon" 
+        style={{ color: color }} // Dynamic color from props
+      >
         {icon}
       </div>
       
       {/* Name Section */}
-      <h3 className="text-lg font-semibold text-gray-200">
+      <h3 className="skill-name">
         {name}
       </h3>
     </div>

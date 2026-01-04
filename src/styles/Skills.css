@@ -1,0 +1,80 @@
+/* Skills.css */
+
+/* --- Main Section --- */
+.skills-section {
+  padding-top: 4rem;    /* py-16 */
+  padding-bottom: 4rem;
+  background-color: #1f2937; /* bg-gray-800 */
+  /* Optional: Add scroll-margin-top if you have a sticky header */
+  scroll-margin-top: 6rem;
+}
+
+/* --- Container --- */
+.skills-container {
+  max-width: 72rem; /* max-w-6xl */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem;
+}
+
+/* --- Section Heading --- */
+.skills-heading {
+  font-size: 2.25rem; /* text-4xl */
+  line-height: 2.5rem;
+  font-weight: 700;   /* font-bold */
+  text-align: left;   /* text-left */
+  color: #ffffff;     /* text-white */
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.skills-heading-highlight {
+  color: #3b82f6; /* text-blue-500 */
+}
+
+/* --- Category Wrapper --- */
+.category-wrapper {
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+/* --- Category Title & Separator --- */
+.category-header {
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.category-title {
+  font-size: 1.5rem; /* text-2xl */
+  line-height: 2rem;
+  font-weight: 700;  /* font-bold */
+  color: #d1d5db;    /* text-gray-300 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.separator-line {
+  width: 100%;       /* w-full */
+  height: 1px;       /* h-px */
+  background-color: #374151; /* bg-gray-700 */
+}
+
+/* --- Skills Grid --- */
+.skills-grid {
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+  
+  /* Default: 2 columns (grid-cols-2) */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Medium Screens (md:grid-cols-3) */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Large Screens (lg:grid-cols-4) */
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

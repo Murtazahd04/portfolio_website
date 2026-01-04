@@ -1,0 +1,44 @@
+/* src/styles/BackToTop.css */
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  
+  background-color: #2563eb; /* Blue base */
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Initial State: Hidden */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  
+  /* Smooth Transitions */
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Visible State (Applied via React class) */
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover Effect: Glow and lift */
+.back-to-top:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.6); /* Glow effect */
+}

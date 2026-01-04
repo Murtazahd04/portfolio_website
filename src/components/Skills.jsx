@@ -1,7 +1,8 @@
 import React from 'react';
 import Skill_Card from './Skill_Card';
-import { FaReact, FaJava, FaPython, FaGitAlt, FaJs, FaDocker } from "react-icons/fa";
+import { FaReact, FaJava, FaPython, FaGitAlt, FaJs } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
+import '../styles/Skills.css'; // Import the CSS file
 
 const Skills = () => {
   
@@ -32,28 +33,28 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-16 bg-gray-800">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="skills" className="skills-section">
+      <div className="skills-container">
         
-        {/* Main Section Heading - CHANGED to text-left */}
-        <h2 className="text-4xl font-bold text-left text-white mb-12">
-          My <span className="text-blue-500">Technical Skills</span>
+        {/* Main Section Heading */}
+        <h2 className="skills-heading">
+          My <span className="skills-heading-highlight">Technical Skills</span>
         </h2>
 
         {/* Mapping through the Categories */}
         {skillCategories.map((category, index) => (
-          <div key={index} className="mb-12">
+          <div key={index} className="category-wrapper">
             
             {/* Category Title with separator line BELOW */}
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold text-gray-300 mb-4">
+            <div className="category-header">
+              <h3 className="category-title">
                 {category.title}
               </h3>
-              <div className="w-full h-px bg-gray-700"></div>
+              <div className="separator-line"></div>
             </div>
 
             {/* Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="skills-grid">
               {category.skills.map((skill, skillIndex) => (
                 <Skill_Card 
                   key={skillIndex}

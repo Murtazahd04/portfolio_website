@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+/* index.css - Global Styles & Reset */
+
+/* 1. Use a consistent box model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. Set up the body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #111827; /* Dark background (gray-900) matches your theme */
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflow */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}

@@ -1,0 +1,38 @@
+/* src/styles/Projects.css */
+
+.projects-section {
+  padding: 6rem 1.5rem; /* py-24 px-6 */
+   background-color: #1f2937; /* bg-gray-800 */
+  scroll-margin-top: 6rem;
+}
+
+.projects-container {
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto;
+}
+
+.projects-header {
+  margin-bottom: 3.5rem;
+}
+
+.projects-label {
+  font-size: 1.875rem; /* text-3xl */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #06b6d4; /* text-cyan-500 */
+  margin-bottom: 1rem;
+}
+
+.projects-sub {
+  font-size: 1.1rem;
+  color: #9ca3af; /* text-gray-400 */
+  max-width: 600px;
+}
+
+/* --- Grid Layout --- */
+.projects-grid {
+  display: grid;
+  gap: 2.5rem; /* gap-10 */
+  /* Responsive Magic: Auto-fit columns */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}

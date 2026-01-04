@@ -1,0 +1,42 @@
+/* SkillCard.css */
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem; /* p-6 */
+  background-color: #1f2937; /* bg-gray-800 */
+  border-radius: 0.75rem; /* rounded-xl */
+  
+  /* shadow-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  border: 1px solid #374151; /* border-gray-700 */
+  
+  /* Transition settings */
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* Hover Effects */
+.skill-card:hover {
+  border-color: #6b7280; /* hover:border-gray-500 */
+  transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+}
+
+/* --- Icon Section --- */
+.skill-icon {
+  font-size: 3rem; /* text-5xl */
+  margin-bottom: 0.75rem; /* mb-3 */
+  /* Color is handled inline via React props */
+}
+
+/* --- Name Section --- */
+.skill-name {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;    /* font-semibold */
+  color: #e5e7eb;      /* text-gray-200 */
+  margin: 0;
+}
