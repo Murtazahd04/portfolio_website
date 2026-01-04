@@ -14,7 +14,8 @@ const Projects = () => { // <--- THIS LINE WAS MISSING
       image: crm,
       techStack: ["Python", "SQLite", "Tkinter"],
       githubLink: "https://github.com/ABIZER-web/gymmy.git",
-      demoLink: "#",
+      demoLink: "https://drive.google.com/file/d/1bAlSBnkqg7cDJ_mnc8YpjEmaxGwuuNkS/view?usp=sharing",
+
       // CHANGE 1: Add the flag here
       isMiniProject: true 
     },
@@ -25,7 +26,7 @@ const Projects = () => { // <--- THIS LINE WAS MISSING
       image: college_asset_management,
       techStack: ["Django", "Sqlite"],
       githubLink: "https://github.com/Murtazahd04/College_Asset_Management_Website.git",
-      demoLink: "#",
+      
       // You can add it here too if needed, or leave it false/undefined
       isMiniProject: true
     },
@@ -47,7 +48,7 @@ const Projects = () => { // <--- THIS LINE WAS MISSING
       image: porfolio_project,
       techStack: ["React Js", "CSS3"],
       githubLink: "https://github.com/Murtazahd04/portfolio_website.git",
-      demoLink: "",
+      demoLink: "https://portfolio-website-blush-six-60.vercel.app/",
       isMiniProject: false
     },
 
